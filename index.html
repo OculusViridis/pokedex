@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/png" href="Imagenes/favicom.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="pokedex">
+        <header class="pokedex__header">
+            <h1 class="pokedex__title">
+                <img src="Imagenes/favicom.png" alt="Icono de Pokédex" class="pokedex__title-icon">
+                Pokédex
+            </h1>
+            <form class="pokedex__search-form" id="search-form">
+                <input class="pokedex__search-input" type="search" id="search-input" placeholder="Busca por nombre o ID" aria-label="Buscar Pokémon por nombre o ID">
+                <button class="pokedex__search-btn" type="submit">Buscar</button>
+            </form>
+            <button class="pokedex__load-initial-btn" id="load-initial-btn">Cargar Pokémon Iniciales</button>
+            <button class="pokedex__scroll-btn" id="scroll-to-favorites-btn">Ver Mis Favoritos ↓</button>
+        </header>
+
+        <section class="pokemon-results" id="pokemon-results-container">
+            </section>
+
+        <section class="pokedex__favorites" id="favorites-section">
+            <h2 class="pokedex__favorites-title">Mis Favoritos</h2>
+            <div class="pokemon-list" id="favorites-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
